@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import hprint
+import py_print
