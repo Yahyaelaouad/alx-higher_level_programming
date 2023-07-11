@@ -9,9 +9,9 @@ if __name__ == "__main__":
     filename = "add_item.json"
 
     # Check if the file exists, load its content if it does
-    if os.path.isfile(filename):
+    try:
         items = load_from_json_file(filename)
-    else:
+    except FileNotFoundError:
         items = []
 
     items.extend(sys.argv[1:])
